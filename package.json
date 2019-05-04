@@ -54,7 +54,7 @@
     "prebuild": "npm run lint",
     "build": "browserify -d -e ./src/main.js -t deamdify -s peaks | exorcist peaks.js.map | derequire - > peaks.js",
     "doc": "jsdoc --private --destination docs --recurse src",
-    "lint": "eslint src/**/*.js test/**/*.js",
+    "lint": "eslint src/**/*.js",
     "pretest": "npm run build",
     "test": "./node_modules/karma/bin/karma start",
     "test-watch": "npm test -- --auto-watch --no-single-run",
