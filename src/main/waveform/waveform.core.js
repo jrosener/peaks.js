@@ -299,11 +299,11 @@
                                   remoteData :
                                   WaveformData.create(remoteData);
 
-      this.waveformOverview = new WaveformOverview(
-        this.originalWaveformData,
-        this.ui.overview,
-        this.peaks
-      );
+    //   this.waveformOverview = new WaveformOverview(
+    //     this.originalWaveformData,
+    //     this.ui.overview,
+    //     this.peaks
+    //   );
 
       this.waveformZoomView = new WaveformZoomView(
         this.originalWaveformData,
