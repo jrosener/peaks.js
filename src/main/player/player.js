@@ -140,7 +140,7 @@ define(['peaks/waveform/waveform.utils'], function(Utils) {
    */
 
   Player.prototype.getCurrentTime = function() {
-    return this._mediaElement.currentTime;
+    return this._mediaElement.getAbsoluteCurrentTime();
   };
 
   /**
@@ -150,7 +150,7 @@ define(['peaks/waveform/waveform.utils'], function(Utils) {
    */
 
   Player.prototype.getDuration = function() {
-    return this._mediaElement.duration;
+    return this._mediaElement.getAbsoluteDuration();
   };
 
   /**
@@ -165,7 +165,7 @@ define(['peaks/waveform/waveform.utils'], function(Utils) {
       return;
     }
 
-    this._mediaElement.currentTime = time;
+    this._mediaElement.setAbsoluteCurrentTime(time);
   };
 
   /**
